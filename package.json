@@ -1,0 +1,27 @@
+{
+  "name": "expressjs-learning-curve",
+  "version": "1.0.0",
+  "description": "expressjs learning curve",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start-esm": "nodemon --experimental-modules",
+    "start": "npm run start-esm app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavpatil28/expressjs-learning-curve.git"
+  },
+  "author": "Vaibhav Patil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaibhavpatil28/expressjs-learning-curve/issues"
+  },
+  "homepage": "https://github.com/vaibhavpatil28/expressjs-learning-curve#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
