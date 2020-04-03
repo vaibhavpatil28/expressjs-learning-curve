@@ -6,7 +6,7 @@
   "type": "module",
   "nodemonConfig": { 
     "exec": "npm start",
-    "watch": ["static/*"],
+    "watch": ["app.js","static/*"],
     "ignore": ["**/__tests__/**", "*.test.js", "*.spec.js"]
   },
   "scripts": {
