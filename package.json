@@ -11,18 +11,7 @@
   "scripts": {
     "start-esm": "nodemon --experimental-modules",
     "start": "npm run start-esm app.js",
-    "build": "npm-run-all clean transpile",
-    "server": "node ./dist-server/bin/www",
-    "dev": "NODE_ENV=development npm-run-all build server",
-    "prod": "NODE_ENV=production npm-run-all build server",
-    "transpile": "babel ./server --out-dir dist-server",
-    "clean": "rimraf dist-server",
     "watch:dev": "nodemon"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
   },
   "repository": {
     "type": "git",
@@ -35,12 +24,7 @@
   },
   "homepage": "https://github.com/vaibhavpatil28/expressjs-learning-curve#readme",
   "dependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
     "express": "^4.17.1",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
