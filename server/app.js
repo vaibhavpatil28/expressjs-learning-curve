@@ -5,15 +5,8 @@ import path,{join} from 'path';
 // const path = require('path');
 
 const app = express();
-// const __dirname = join(process.cwd());
-// console.log('__dirname: ', __dirname);
-// app.use('public',express.static(path.join(__dirname, '../public')));
-// app.get('*.*', express.static(STATIC_FOLDER, {
-//     maxAge: '1y'
-// }));
 
 app.use('/public',express.static(path.join(__dirname, '../static')));
-
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../static', 'index.html'));
